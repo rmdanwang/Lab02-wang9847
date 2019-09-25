@@ -45,7 +45,7 @@ resource "google_compute_instance" "svc-1" {
     destination = "~/svc-01"
     connection {
       host        = "${google_compute_instance.svc-1.network_interface.0.access_config.0.nat_ip}"
-      user        = "betz4871"
+      user        = "wang9847"
       type        = "ssh"
       private_key = "${file("~/.ssh/google_compute_engine")}"
     }
@@ -54,7 +54,7 @@ resource "google_compute_instance" "svc-1" {
   provisioner "remote-exec" {
     connection {
       host        = "${google_compute_instance.svc-1.network_interface.0.access_config.0.nat_ip}"
-      user        = "betz4871"
+      user        = "wang98471"
       type        = "ssh"
       private_key = "${file("~/.ssh/google_compute_engine")}"
       }
